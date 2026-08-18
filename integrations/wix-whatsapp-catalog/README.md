@@ -15,7 +15,7 @@ Hermes/OpenClaw workflow  (intent detection: search / product / policies)
       |  HTTP Request node
       v
 this webhook  (Express, src/server.js)
-      |  Wix Stores Catalog V3 REST API
+      |  Wix Stores Catalog V1 REST API
       v
 Wix Stores catalog (products, prices, inventory)
       |
@@ -33,10 +33,12 @@ or contacts — see [Limitations](#limitations) below if you need that.
 
 1. `cd integrations/wix-whatsapp-catalog && npm install`
 2. Generate a Wix API key at https://manage.wix.com/account/api-keys, scoped
-   to **only** "Read products in v3 catalog" on the one site you want the
-   bot to answer for (least privilege — this key never needs write access).
-3. Copy `.env.example` to `.env` and fill in `WIX_API_KEY`, `WIX_SITE_ID`,
-   and a `WEBHOOK_SHARED_SECRET` (any random string).
+   to **only** "Read Products" (`SCOPE.DC-STORES.READ-PRODUCTS`) on the one
+   site you want the bot to answer for (least privilege — this key never
+   needs write access).
+3. Copy `.env.example` to `.env` and fill in `WIX_API_KEY`, `WIX_SITE_ID`
+   (for dakardiscount.com: `e72fad7a-f210-4036-828d-728afc03d10c`), and a
+   `WEBHOOK_SHARED_SECRET` (any random string).
 4. `npm start` — the webhook listens on `PORT` (default `3000`).
 5. Deploy it somewhere Hermes/OpenClaw can reach over HTTP (Railway,
    Render, Fly.io, a small VPS, etc.) since most no-code tools cannot call
@@ -60,10 +62,12 @@ loosely ("vous avez du riz parfumé ?").
       "name": "Riz parfumé 5kg",
       "slug": "riz-parfume-5kg",
       "description": "...",
-      "price": "$8.50",
-      "currency": "USD",
+      "price": "8.50 XOF",
+      "discountedPrice": "7.50 XOF",
+      "currency": "XOF",
       "inStock": true,
-      "availabilityStatus": "IN_STOCK"
+      "availabilityStatus": "IN_STOCK",
+      "url": "https://www.dakardiscount.com/product-page/riz-parfume-5kg"
     }
   ]
 }
