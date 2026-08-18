@@ -1,0 +1,11 @@
+{
+  "payment": {
+    "methods": ["Wave", "Orange Money", "Especes a la livraison", "Carte bancaire (Wix Payments)"],
+    "notes": "A completer avec vos modalites de paiement reelles."
+  },
+  "delivery": {
+    "zones": ["Dakar", "Reste du Senegal"],
+    "estimatedTime": "24-72h selon la zone",
+    "cost": "A completer avec votre grille tarifaire de livraison."
+  }
+}
