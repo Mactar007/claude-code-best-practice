@@ -13,30 +13,36 @@ function wixHeaders() {
   };
 }
 
+// dakardiscount.com runs Wix Stores Catalog V1 (confirmed via GetSiteContext),
+// not the newer V3 catalog — V1 and V3 endpoints are not interchangeable.
 function formatProduct(product) {
   return {
     id: product.id,
     name: product.name,
     slug: product.slug ?? null,
-    description: product.plainDescription ?? null,
-    price: product.actualPriceRange?.minValue?.formattedAmount ?? null,
-    currency: product.currency ?? null,
-    inStock: product.inventory?.availabilityStatus === 'IN_STOCK',
-    availabilityStatus: product.inventory?.availabilityStatus ?? null,
+    description: product.description ?? null,
+    price: product.priceData?.formatted?.price ?? null,
+    discountedPrice: product.priceData?.formatted?.discountedPrice ?? null,
+    currency: product.priceData?.currency ?? null,
+    inStock: product.stock?.inventoryStatus === 'IN_STOCK',
+    availabilityStatus: product.stock?.inventoryStatus ?? null,
+    url: product.productPageUrl
+      ? `${product.productPageUrl.base}${product.productPageUrl.path}`
+      : null,
   };
 }
 
-// Free-text search across product name/description. Used to answer
-// "avez-vous X ?" / "quel est le prix de X ?" style questions.
+// Free-text search on product name. Used to answer "avez-vous X ?" /
+// "quel est le prix de X ?" style questions. Catalog V1's filter is a
+// JSON-stringified object, not a nested JSON body like V3.
 export async function searchProducts(query, limit = 5) {
-  const response = await fetch(`${WIX_API_BASE}/stores/v3/products/search`, {
+  const response = await fetch(`${WIX_API_BASE}/stores/v1/products/query`, {
     method: 'POST',
     headers: wixHeaders(),
     body: JSON.stringify({
-      fields: ['CURRENCY'],
-      search: {
-        search: { expression: query, fields: ['name', 'description'] },
-        cursorPaging: { limit },
+      query: {
+        filter: JSON.stringify({ name: { $contains: query } }),
+        paging: { limit },
       },
     }),
   });
@@ -50,12 +56,9 @@ export async function searchProducts(query, limit = 5) {
 // Full detail for one product, including live stock status, once the
 // workflow already knows which productId it's asking about.
 export async function getProduct(productId) {
-  const params = new URLSearchParams();
-  ['CURRENCY', 'DESCRIPTION'].forEach((f) => params.append('fields', f));
-  const response = await fetch(
-    `${WIX_API_BASE}/stores/v3/products/${productId}?${params.toString()}`,
-    { headers: wixHeaders() },
-  );
+  const response = await fetch(`${WIX_API_BASE}/stores/v1/products/${productId}`, {
+    headers: wixHeaders(),
+  });
   if (!response.ok) {
     throw new Error(`Wix get product failed: ${response.status} ${await response.text()}`);
   }
