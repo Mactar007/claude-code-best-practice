@@ -9,6 +9,7 @@
 ## Audience & Voice
 - **Values**: Quality, Affordability, Innovation, Sustainability
 - **Tone of voice**: Professional, Dynamic, Passionate, Accessible
+- **Language**: French/Wolof code-switching — the audience is Senegalese, so campaign copy should reflect that mix rather than a generic French/English tone. Wolof phrases should stay short and well-attested; have a native speaker review before production use.
 - **Aesthetic**: Gritty Industrialism, Muted Olive Utility, Neon-Infused Rawness, Weathered Digital Surfaces, Tactile Skeuomorphic Layout
 - **Imagery style**: Urban/industrial photography (brick, concrete, neon signage), street-sport subjects (e.g. basketball hoops)
 
