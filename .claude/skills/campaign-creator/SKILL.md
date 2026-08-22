@@ -17,7 +17,7 @@ You will receive a brand kit (name, tagline, sector, geography, audience, tone, 
 
 2. **Create the campaign visual** — Use the SVG template from [reference.md](reference.md), replacing placeholders with the brand name, tagline, and suggested palette. Read then write to `marketing-workflow/campaign-visual.svg`.
 
-3. **Write ad copy variations** — Generate exactly 3 short ad copy variations (headline + one-line body + CTA) that match the brand's tone and positioning. Read then write to `marketing-workflow/campaign-copy.md` using the template from [reference.md](reference.md).
+3. **Write ad copy variations** — Generate exactly 3 short ad copy variations (headline + one-line body + CTA) that match the brand's tone, positioning, and the audience's actual local language (from the brand kit's Language field — not necessarily the site's own copy language). Read then write to `marketing-workflow/campaign-copy.md` using the template from [reference.md](reference.md), including the Local-Language Glossary section whenever a lower-resource local language is used.
 
 4. **Write the summary** — Read then write `marketing-workflow/output.md` linking all three outputs.
 
@@ -25,6 +25,7 @@ You will receive a brand kit (name, tagline, sector, geography, audience, tone, 
 
 - Use the exact brand kit fields provided — do not re-fetch or invent brand facts
 - Always keep the "inferred, not extracted" caveat on colors visible in the brand kit output
+- Any phrase in a local/lower-resource language must appear in the Local-Language Glossary — never bury it only inside prose where it's hard to find and edit
 - The SVG must be self-contained and valid
 - All output files go in the `marketing-workflow/` directory
 
