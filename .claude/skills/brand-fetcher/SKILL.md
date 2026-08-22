@@ -16,6 +16,8 @@ Given a target URL, extract a structured brand kit: name, tagline, sector, geogr
 
 ## Instructions
 
+0. **Check for a user-supplied brand book first**: If the caller's context already includes a real brand book, style guide, or brand asset file (e.g. a PDF from Pomelli or elsewhere), extract the brand kit from that document instead of fetching the URL. A real brand book is ground truth; text-only web analysis is a fallback for when no such document exists. Never let an inferred palette override a documented one.
+
 1. **Fetch the homepage**: Use the WebFetch tool on the target URL with a prompt asking for a marketing-brand audit: company name, sector, products/services, target audience, tone/style of the copy, taglines, and any distinctive brand elements.
 
 2. **Fetch a second pass if the first is thin**: Many sites render content via JavaScript, so WebFetch's text conversion can be fragmentary or truncated. If the first fetch returns little detail, re-fetch the same URL with a prompt asking specifically for the page `<title>` and any literal tagline text — this alone is often enough to anchor name + positioning.
