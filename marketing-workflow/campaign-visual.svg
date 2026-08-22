@@ -10,7 +10,7 @@
 
   <text x="200" y="200" text-anchor="middle" fill="#C9DD72" font-family="Barlow, system-ui" font-size="26" font-weight="bold">Dakardiscount</text>
   <text x="200" y="223" text-anchor="middle" fill="#E4EEB8" font-family="Barlow, system-ui" font-size="14">Sport · Électronique · Maison</text>
-  <text x="200" y="245" text-anchor="middle" fill="#4DD9E8" font-family="Barlow, system-ui" font-style="italic" font-size="14">Bul yàgg !</text>
+  <text x="200" y="245" text-anchor="middle" fill="#4DD9E8" font-family="Barlow, system-ui" font-style="italic" font-size="14">Loy xaar ?</text>
 
   <rect x="110" y="270" width="180" height="46" rx="23" fill="#DF3131"/>
   <text x="200" y="299" text-anchor="middle" fill="#FFFFFF" font-family="Barlow, system-ui" font-size="15" font-weight="bold">Explorer la sélection</text>
