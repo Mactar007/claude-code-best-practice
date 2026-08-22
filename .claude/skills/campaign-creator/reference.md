@@ -83,6 +83,15 @@
 **Headline**: [headline]
 **Body**: [one-line body]
 **CTA**: [cta]
+
+## Local-Language Glossary
+[Only include this section if the brand kit's Language field specifies a language Claude is not confidently fluent in — e.g. Wolof, or any language with limited training data. Omit entirely for high-resource languages like French/English/Spanish where confidence is high.]
+
+| Phrase used | Literal / intended meaning | Used in |
+|---|---|---|
+| [phrase] | [gloss] | [where] |
+
+Not verified by a native speaker — generated as a reasonable draft, not a fact. Corrections are welcome and expected. Edit this table directly; it is the single source of truth for local-language phrasing in this campaign.
 ```
 
 ---
