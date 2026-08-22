@@ -7,7 +7,8 @@
         "@playwright/mcp@0.0.70",
         "--browser=chromium",
         "--executable-path=/opt/pw-browsers/chromium",
-        "--headless"
+        "--headless",
+        "--proxy-server=http://127.0.0.1:44727"
       ]
     },
     "context7": {
