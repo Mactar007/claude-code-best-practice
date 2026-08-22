@@ -25,10 +25,10 @@ Tone: Professional, Dynamic, Passionate, Accessible (per the real Pomelli brand 
 
 Every Wolof phrase used in this campaign, isolated here so it's easy to swap without editing prose. **If a term reads wrong to a native speaker, edit it directly in this table** — it is the single source of truth for local-language phrasing in this campaign.
 
-| Phrase used | Literal / intended meaning | Used in |
-|---|---|---|
-| Loy xaar ? | "What are you waiting for?" — rhetorical call to action | Variation 1 CTA, campaign visual tag |
-| Yaakaar bu baax | "A good/trustworthy choice" | Variation 2 tag |
-| Jërëjëf ci Dakardiscount | "Thank you for choosing Dakardiscount" | Variation 3 tag |
+| Phrase used | Literal / intended meaning | Used in | Verification (Glosbe) |
+|---|---|---|---|
+| Loy xaar ? | "What are you waiting for?" — rhetorical call to action | Variation 1 CTA, campaign visual tag | ✅ "xaar" confirmed = "attendre" (to wait) |
+| Yaakaar bu baax | "A good/trustworthy choice" | Variation 2 tag | ❓ "yaakaar" not found in Glosbe — common word, but this dictionary's Wolof coverage is incomplete; not a sign it's wrong |
+| Jërëjëf ci Dakardiscount | "Thank you for choosing Dakardiscount" | Variation 3 tag | ✅ "jërëjëf" confirmed = "merci" (thank you) |
 
-Not verified by a native Wolof speaker — generated as a reasonable draft, not a fact. Corrections are welcome and expected.
+Not verified by a native Wolof speaker — generated as a reasonable draft, not a fact, even where Glosbe confirms it. Corrections are welcome and expected. Edit this table directly; it is the single source of truth for local-language phrasing in this campaign.
