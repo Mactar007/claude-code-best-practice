@@ -49,6 +49,10 @@ Use the Skill tool to invoke the campaign-creator skill:
 
 The skill will use the brand kit from Step 2 (available in the current context) to write the brand kit document, a campaign visual (SVG social card), and ad copy variations.
 
+### Step 4: Surface Local-Language Phrasing for Review
+
+If `marketing-workflow/campaign-copy.md` contains a Local-Language Glossary section (i.e. the campaign uses a lower-resource local language), explicitly show the user every phrase in that glossary and invite corrections before treating the campaign as final. Do not silently ship generated local-language phrasing — Claude is not a certified speaker of every local language, and the user (or a native speaker they consult) may need to swap a term. Edits should be made directly in the glossary table, which is the single source of truth propagated to the SVG and copy variations.
+
 ## Output Summary
 
 Provide a clear summary to the user showing:
