@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
-  <rect width="400" height="400" fill="#E63946"/>
-  <rect x="20" y="20" width="360" height="360" rx="16" fill="#1D3557" opacity="0.12"/>
-  <text x="200" y="170" text-anchor="middle" fill="#FFFFFF" font-family="system-ui" font-size="34" font-weight="bold">Dakar Discount</text>
-  <text x="200" y="205" text-anchor="middle" fill="#FFFFFF" font-family="system-ui" font-size="18">Best Deals</text>
-  <rect x="120" y="245" width="160" height="46" rx="23" fill="#F4A300"/>
-  <text x="200" y="274" text-anchor="middle" fill="#1a1a1a" font-family="system-ui" font-size="16" font-weight="bold">Voir les bons plans</text>
+  <rect width="400" height="400" fill="#394737"/>
+  <rect x="20" y="20" width="360" height="360" rx="16" fill="#C9DD72" opacity="0.08"/>
+  <text x="200" y="170" text-anchor="middle" fill="#C9DD72" font-family="Barlow, system-ui" font-size="32" font-weight="bold">Dakardiscount</text>
+  <text x="200" y="200" text-anchor="middle" fill="#E4EEB8" font-family="Barlow, system-ui" font-size="15">Sport · Électronique · Maison</text>
+  <rect x="110" y="245" width="180" height="46" rx="23" fill="#DF3131"/>
+  <text x="200" y="274" text-anchor="middle" fill="#FFFFFF" font-family="Barlow, system-ui" font-size="16" font-weight="bold">Explorer la sélection</text>
 </svg>
