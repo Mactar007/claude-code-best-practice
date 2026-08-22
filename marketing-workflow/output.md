@@ -10,4 +10,6 @@ See [brand-kit.md](brand-kit.md) — now grounded in the real Pomelli-generated 
 See [campaign-copy.md](campaign-copy.md)
 
 ## Correction Log
-The first pass (text-only `WebFetch` analysis) guessed a red/navy/amber "discount urgency" palette and a generic marketplace positioning. The real brand book showed an olive/pistachio/moss + red + gray palette, a specific sector (sports/electronics/household appliances), and a "Professional, Dynamic, Passionate, Accessible" tone. All three output files were regenerated against the real book — see the provenance table in [brand-kit.md](brand-kit.md#provenance-note--was-the-earlier-inference-close).
+1. The first pass (text-only `WebFetch` analysis) guessed a red/navy/amber "discount urgency" palette and a generic marketplace positioning. The real brand book showed an olive/pistachio/moss + red + gray palette, a specific sector (sports/electronics/household appliances), and a "Professional, Dynamic, Passionate, Accessible" tone. See the provenance table in [brand-kit.md](brand-kit.md#provenance-note--was-the-earlier-inference-close).
+2. The circular cyan/red logo badge from the brand book (page 2) was added to the campaign visual.
+3. The ad copy language was corrected from a generic French/English mix to French/Wolof code-switching, matching the real Senegalese audience — flagged for native-speaker review before production use.
