@@ -1,16 +1,18 @@
-# Campaign Copy — Dakar Discount
+# Campaign Copy — Dakardiscount
+
+Tone: Professional, Dynamic, Passionate, Accessible (per the real Pomelli brand book). Values: Quality, Affordability, Innovation, Sustainability.
 
 ## Variation 1
-**Headline**: Dakar Discount, les meilleurs prix à portée de clic
-**Body**: Des milliers de bonnes affaires livrées partout à Dakar.
-**CTA**: Je découvre les offres
+**Headline**: Le sport, la tech et la maison, réunis chez Dakardiscount
+**Body**: Des produits de qualité, sélectionnés pour durer, à des prix qui respectent votre budget.
+**CTA**: Explorer la sélection
 
 ## Variation 2
-**Headline**: Best Deals, Dakar Style
-**Body**: Pourquoi payer plus ? Comparez, économisez, recevez chez vous.
-**CTA**: Je magasine maintenant
+**Headline**: Innover sans se ruiner
+**Body**: Électroménager, électronique, équipement sportif : la qualité accessible, livrée à Dakar.
+**CTA**: Découvrir Dakardiscount
 
 ## Variation 3
-**Headline**: L'agora des bonnes affaires est ouverte
-**Body**: Nouvelles réductions chaque semaine, sans bouger de chez vous.
-**CTA**: Je profite des promos
+**Headline**: Votre style de vie, notre exigence de qualité
+**Body**: Des marques reconnues, une expérience d'achat simple et fiable, pensée pour vous.
+**CTA**: Commander maintenant
