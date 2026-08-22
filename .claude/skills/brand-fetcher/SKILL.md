@@ -28,6 +28,7 @@ Given a target URL, extract a structured brand kit: name, tagline, sector, geogr
    - **Sector**: industry / category of business
    - **Geography**: city/country the business serves, if apparent
    - **Audience**: who the site is speaking to
+   - **Language**: the audience's actual local language(s), which can differ from the site's own copy language — e.g. a Senegalese audience may expect French/Wolof code-switching even if the site itself is written only in French. Ask the caller if this isn't obvious from the site content; don't default to the site's language alone.
    - **Tone**: language register (formal/casual, bilingual, urgency-driven, etc.)
    - **Positioning**: one-sentence summary of how the brand presents itself
 
@@ -44,6 +45,7 @@ Return the brand kit in this structure:
 - Sector: [sector]
 - Geography: [geography]
 - Audience: [audience]
+- Language: [audience's local language(s), which may differ from the site's copy language]
 - Tone: [tone]
 - Positioning: [one-sentence positioning]
 - Suggested palette (inferred, not extracted): [hex1] primary, [hex2] secondary, [hex3] accent
