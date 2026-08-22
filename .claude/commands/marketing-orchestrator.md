@@ -51,7 +51,7 @@ The skill will use the brand kit from Step 2 (available in the current context) 
 
 ### Step 4: Surface Local-Language Phrasing for Review
 
-If `marketing-workflow/campaign-copy.md` contains a Local-Language Glossary section (i.e. the campaign uses a lower-resource local language), explicitly show the user every phrase in that glossary and invite corrections before treating the campaign as final. Do not silently ship generated local-language phrasing — Claude is not a certified speaker of every local language, and the user (or a native speaker they consult) may need to swap a term. Edits should be made directly in the glossary table, which is the single source of truth propagated to the SVG and copy variations.
+If `marketing-workflow/campaign-copy.md` contains a Local-Language Glossary section (i.e. the campaign uses a lower-resource local language), `campaign-creator` will already have run each phrase through `local-language-checker` (Glosbe) and recorded a ✅/⚠️/❓ verdict per entry. Show the user the full glossary table, including verdicts, and invite corrections before treating the campaign as final. A ✅ from Glosbe is corroboration, not proof — do not silently ship generated local-language phrasing on the strength of an automated check alone; a human (ideally a native speaker) still has the final say. Edits should be made directly in the glossary table, which is the single source of truth propagated to the SVG and copy variations.
 
 ## Output Summary
 
